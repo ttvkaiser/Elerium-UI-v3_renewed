@@ -52,3 +52,22 @@ features:AddLabel("Hello World!")
 local features = window:AddTab("Features") -- Name of tab
 features:Show() -- shows the tab
 ```
+
+---
+
+### Adding Button:
+```lua
+features:AddButton("name",function()
+	-- Code here
+end)
+```
+
+---
+
+### Adding Switches:
+```lua
+local switch = features:AddSwitch("name", function(bool)
+	 -- toggle_god_mode(bool)
+end)
+switch:Set(true)
+```
