@@ -1,4 +1,4 @@
-# Elerium V3 UI Library
+# Elerium V3 UI Library | SUPPORTS MOBILE AND PC
 
 **Elerium V3** is a sleek and modern Roblox UI library, designed for script developers who want power, polish, and performance. Rewritten from scratch by **Emperor**, Elerium V3 takes everything great about V2 — and evolves it for the next generation.
 
