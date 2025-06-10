@@ -24,7 +24,7 @@
 
 ### Loadstring:
 ```lua
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ttvkaiser/Elerium-UI-v3_renewed/refs/heads/main/Library.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ttvkaiser/Elerium-UI-v3_renewed/refs/heads/main/Library.lua", true))()
 ```
 
 ---
