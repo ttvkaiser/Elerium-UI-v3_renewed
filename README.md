@@ -20,6 +20,12 @@
 
 ---
 
+## 📄 Preview
+
+![Elerium V3 Banner](https://imgur.com/a/AZLZbJd)
+
+---
+
 ## 🚀 Usage
 
 ### Loadstring:
@@ -33,31 +39,31 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ttvka
 ```lua
 local window = library:AddWindow("Elerium UI Example | Recontinued", { -- You can change the Name!
 	main_color = Color3.fromRGB(41, 74, 122), -- Color
-	min_size = Vector2.new(250, 346), -- Size of the gui
+	min_size = Vector2.new(500, 500), -- Size of the gui, you can change it. To adjust your size of script
 	can_resize = false, -- true or false
 })
 ```
 
 ---
 
-### Adding Labels:
+### Adding Tabs:
 ```lua
-features:AddLabel("Hello World!")
+local main = window:addtab("Main") -- Name of tab
+main:Show() -- Shows the tab
 ```
 
 ---
 
-### Adding Tabs:
+### Adding Labels:
 ```lua
-local features = window:AddTab("Features") -- Name of tab
-features:Show() -- Shows the tab
+main:AddLabel("Label Example")
 ```
 
 ---
 
 ### Adding Button:
 ```lua
-features:AddButton("name",function()
+main:AddButton("Button Example",function()
 	-- Code here
 end)
 ```
@@ -66,7 +72,7 @@ end)
 
 ### Adding Switches:
 ```lua
-local switch = features:AddSwitch("name", function(bool)
+local switch = main:AddSwitch("Switch Example", function(bool)
 	 -- Code can be entered here!
 end)
 switch:Set(true) -- Turn false if don't want it already turned on
@@ -76,7 +82,7 @@ switch:Set(true) -- Turn false if don't want it already turned on
 
 ### Adding Textboxes:
 ```lua
-features:AddTextBox("free click", function(text) -- You can add anything to "text"
+main:AddTextBox("Text Box Example", function(text) -- You can add anything to "text"
 	game:GetService("ReplicatedStorage").Events.FreeGifts.Gift2:FireServer(text,"Clicks",false,false,"Normal")
 end)
 ```
@@ -85,7 +91,7 @@ end)
 
 ### WORKS ON PC, NOT ON MOBILE. I'LL FIX IT LATER!! | Adding Slider:
 ```lua
-local slider = features:AddSlider("WalkSpeed", function(p)
+local slider = main:AddSlider("Slider Example", function(p)
 	setwalkspeed(p)   
 end, {                    
 
@@ -99,7 +105,7 @@ slider:Set(16) -- Needed
 
 ### Adding Dropdowns:
 ```lua
-local dropdown = features:AddDropdown("select", function(text)
+local dropdown = main:AddDropdown("Dropdown Example", function(text)
 	if text == "Mars" then  -- Code
 		print("o")
 	elseif text == "Earth" then
@@ -118,7 +124,7 @@ local not_a_planet = dropdown:Add("Iridocyclitis")
 ### Adding Console:
 ```lua
 -- Add console for ur Script/Gui, Idk if works
-features:AddConsole({ 
+main:AddConsole({ 
 	["y"] = 210,
 	["readonly"] = false,  
 	["source"] = "Lua",
@@ -130,7 +136,7 @@ features:AddConsole({
 ### Adding Folders:
 ```lua
 -- add folder for more space
-local folder = features:AddFolder()
+local folder = main:AddFolder("    Example Folder")
 folder:AddSwitch()
 folder:AddLabel("Woo! I'm inside a folder!")
 
