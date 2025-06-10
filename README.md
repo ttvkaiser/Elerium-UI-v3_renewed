@@ -23,3 +23,6 @@
 ## 🚀 Usage
 
 ### Loadstring:
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ttvkaiser/Elerium-UI-v3_renewed/refs/heads/main/Example%20Doc_with-everything.lua"))()
+```
