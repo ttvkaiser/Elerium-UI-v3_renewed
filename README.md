@@ -22,7 +22,7 @@
 
 ## 📄 Preview
 
-![Elerium V3 Banner](https://imgur.com/a/AZLZbJd)
+![Elerium V3 Banner](https://imgur.com/a/AZLZbJd.png)
 
 ---
 
