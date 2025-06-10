@@ -50,7 +50,7 @@ features:AddLabel("Hello World!")
 ### Adding Tabs:
 ```lua
 local features = window:AddTab("Features") -- Name of tab
-features:Show() -- shows the tab
+features:Show() -- Shows the tab
 ```
 
 ---
@@ -67,7 +67,30 @@ end)
 ### Adding Switches:
 ```lua
 local switch = features:AddSwitch("name", function(bool)
-	 -- toggle_god_mode(bool)
+	 -- Code can be entered here!
 end)
-switch:Set(true)
+switch:Set(true) -- Turn false if don't want it already turned on
+```
+
+---
+
+### Adding Textboxes:
+```lua
+features:AddTextBox("free click", function(text) -- You can add anything to "text"
+	game:GetService("ReplicatedStorage").Events.FreeGifts.Gift2:FireServer(text,"Clicks",false,false,"Normal")
+end)
+```
+
+---
+
+### WORKS ON PC, NOT ON MOBILE. I'LL FIX IT LATER!! | Adding Slider:
+```lua
+local slider = features:AddSlider("WalkSpeed", function(p)
+	setwalkspeed(p)   
+end, {                    
+
+	["min"] = 16,
+	["max"] = 100,  
+})
+slider:Set(16) -- Needed
 ```
