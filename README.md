@@ -94,3 +94,50 @@ end, {
 })
 slider:Set(16) -- Needed
 ```
+
+---
+
+### Adding Dropdowns:
+```lua
+local dropdown = features:AddDropdown("select", function(text)
+	if text == "Mars" then  -- Code
+		print("o")
+	elseif text == "Earth" then
+	print("k")
+	elseif text == "Iridocyclitis" then
+	print("Weeeee")
+	end
+end)
+local mars = dropdown:Add("Mars")  -- Options 
+local earth = dropdown:Add("Earth")
+local not_a_planet = dropdown:Add("Iridocyclitis")
+```
+
+---
+
+### Adding Console:
+```lua
+-- Add console for ur Script/Gui, Idk if works
+features:AddConsole({ 
+	["y"] = 210,
+	["readonly"] = false,  
+	["source"] = "Lua",
+})
+```
+
+---
+
+### Adding Folders:
+```lua
+-- add folder for more space
+local folder = features:AddFolder()
+folder:AddSwitch()
+folder:AddLabel("Woo! I'm inside a folder!")
+
+local folder2 = folder:AddFolder()
+folder2:AddLabel("I'm inside *two* folders :smirk:")
+```
+
+---
+
+#### Credits: ttvkaiser and Kuzanu
