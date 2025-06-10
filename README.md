@@ -9,7 +9,7 @@
 
 ## 📦 Features
 
-- 📁 Tabs, Sections, Buttons, Toggles, Sliders, Dropdowns, Textboxes
+- 📁 Tabs, Sections, Buttons, Switches, Sliders, Dropdowns, Textboxes
 - 🎨 Fully animated UI with blur, neon glow, and drag support
 - 🔒 Key System UI (optional integration with Linkvertise, LootLabs, etc.)
 - 💾 Config Save/Load System
