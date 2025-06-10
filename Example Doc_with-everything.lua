@@ -1,7 +1,7 @@
 --[[
-	ui-engine-v2
+	ui-engine-v3
 	version 1.3a
-	by Singularity (V3rm @ King Singularity) (Discord @ Singularity#5490)
+	by ttvkaiser
 --]]
 
 local ui_options = {
